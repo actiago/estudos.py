@@ -1,7 +1,6 @@
 """ Faça um Programa que peça o raio de um círculo, calcule e mostre sua área. """
 """ A = π R²"""
 
-cm = float()
 pi = 3.14
 
 metrica = input(' - Que tipo de medida irá utilizar? \n 1 - Metro  \n 2 - Centímetro \n Medida: ')
@@ -14,7 +13,6 @@ if metrica == '1':
     print('\n Selecionada a medida em metro \n')
     valorm = 'M²'
 if metrica == '2':
-    cm = metrica * 100
     valorm = 'cm²'
     print('\n Selecionada a medida em centímetro \n')
 

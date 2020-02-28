@@ -7,7 +7,6 @@ names = [
     'meudominio.com'
     ]
 
-
 def get_status(site):
     try:
         response = requests.head(site, timeout=5)
@@ -25,4 +24,3 @@ for name in names:
     website_status = get_status(site)
     print("{0:30} {1:10} {2:10}"
           .format(site, website_status.status_code, website_status.reason))
-

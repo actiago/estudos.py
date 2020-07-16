@@ -20,7 +20,25 @@ raio = float(input('- Insira o tamanho do raio a ser calculado: '))
 
 area = pi * (raio ** 2)
 
-resultado = 'R: A área do círculo é de {} {}'.format(area, valorm)
+resultado = 'R: A área do círculo é de {} {}\n'.format(area, valorm)
 
-print()
+print('')
 print(resultado)
+
+volume_input = input(' - Deseja calcular o volume desta esfera? \n 1 - Sim \n 2 - Não \n Escolha: ' )
+while volume_input != '1' and volume_input != '2':
+    volume_input = input('* Escolha uma alternativa: \n 1 - Sim \n 2 - Não \n')
+    if volume_input != '1' and volume_input != '2':
+        print('* Voce deve selecionar uma das opções \n')
+
+if volume_input == '1':
+    area_da_superficie = 4 * pi * raio ** 2
+    volume = (4 / 3) * pi * raio ** 3
+    resultado_do_raio = 'R: A área da superfície é de {} e o volume da esfera é de {}'.format(area_da_superficie,volume)
+
+    print('')
+    print(resultado_do_raio)
+
+if volume_input == '2':
+    print('')
+    print('Obrigado.\n')

@@ -34,7 +34,7 @@ while volume_input != '1' and volume_input != '2':
 if volume_input == '1':
     area_da_superficie = 4 * pi * raio ** 2
     volume = (4 / 3) * pi * raio ** 3
-    resultado_do_raio = 'R: A área da superfície é de {} e o volume da esfera é de {}'.format(area_da_superficie,volume)
+    resultado_do_raio = 'R: A área da superfície é de {} e o volume da esfera é de {} cm³'.format(area_da_superficie,volume)
 
     print('')
     print(resultado_do_raio)

@@ -1,7 +1,7 @@
 """ Faça um Programa que peça o raio de um círculo, calcule e mostre sua área. """
 """ A = π R²"""
 
-pi = 3.14
+import math
 
 metrica = input(' - Que tipo de medida irá utilizar? \n 1 - Metro  \n 2 - Centímetro \n Medida: ')
 while metrica != '1' and metrica != '2':
@@ -18,7 +18,7 @@ if metrica == '2':
 
 raio = float(input('- Insira o tamanho do raio a ser calculado: '))
 
-area = pi * (raio ** 2)
+area = math.pi * (raio ** 2)
 
 resultado = 'R: A área do círculo é de {} {}\n'.format(area, valorm)
 
@@ -32,8 +32,8 @@ while volume_input != '1' and volume_input != '2':
         print('* Voce deve selecionar uma das opções \n')
 
 if volume_input == '1':
-    area_da_superficie = 4 * pi * raio ** 2
-    volume = (4 / 3) * pi * raio ** 3
+    area_da_superficie = 4 * math.pi * raio ** 2
+    volume = (4 / 3) * math.pi * raio ** 3
     resultado_do_raio = 'R: A área da superfície é de {} e o volume da esfera é de {} cm³'.format(area_da_superficie,volume)
 
     print('')

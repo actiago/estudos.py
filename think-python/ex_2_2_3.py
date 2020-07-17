@@ -16,7 +16,10 @@ time_first_km = '0:08:15'
 time_tree_km = '0:07:21'
 last_time = time_first_km
 
-(h, m, s) = ((start_time, time_first_km, time_tree_km, last_time).split(':'))
+(h, m, s) = start_time.split(':')
+(h, m, s) = time_first_km.split(':')
+(h, m, s) = time_tree_km.split(':')
+(h, m, s) = last_time.split(':')
 
 convert = datetime.timedelta(hours=int(h), minutes=int(m), seconds=int(s))
 total_time = time_first_km + (time_tree_km * 3) + last_time

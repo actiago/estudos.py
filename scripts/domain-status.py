@@ -4,7 +4,9 @@ from collections import namedtuple
 
 WebsiteStatus = namedtuple('WebsiteStatus', ['status_code', 'reason'])
 names = [
-    'meudominio.com'
+    'meudominio',
+    'google',
+    'bing'
     ]
 
 def get_status(site):

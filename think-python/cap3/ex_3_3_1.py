@@ -9,9 +9,11 @@ com espaços suficientes à frente para que a última letra da string esteja na 
 Dica: Use concatenação de strings e repetição. Além disso, o Python oferece uma função integrada chamada len,
  que apresenta o comprimento de uma string, então o valor de len('monty') é 5."""
 
-s = str(input('Digite uma palavra aleatória: \n'))
+# s = str(input('Digite uma palavra aleatória: \n'))
 
-def right_justify(s):
+s = ('word')
+
+def right_justify():
     size = len(s)
     print(sep=' '*(70 - size) + s)
 

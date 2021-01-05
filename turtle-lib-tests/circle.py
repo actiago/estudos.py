@@ -1,6 +1,6 @@
-import turtle
+import Turtle
 
-ninja = turtle.Turtle()
+ninja = Turtle.Turtle()
 
 colors = [ 'red', 'purple', 'yellow', 'blue', 'green', 'orange' ]
 
